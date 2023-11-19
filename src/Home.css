@@ -1,0 +1,31 @@
+/* home.css */
+.home__section {
+  display: flex !important;
+  position: relative;
+  padding: 30px;
+  overflow-x: auto;
+}
+.home__section::before {
+      content: '';
+      position: absolute;
+      top: -20px; /* Adjust the distance of the triangle above the .home__section */
+      left: 50%; /* Center horizontally */
+      transform: translateX(-50%);
+      border-width: 10px 10px 0;
+      border-style: solid;
+      border-color: #fff transparent transparent transparent;
+    }
+/* Add a more specific selector */
+.home__section .cardd {
+  flex: 0 0 auto;
+  margin-right: 20px;
+  /* Add other card styles */
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.card__box {
+  width: 33%;
+}
